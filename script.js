@@ -28,7 +28,7 @@ updateClock();
 //////////////////////////////////////////////////////////////////
 
 function updateWeather(){
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=53.17&longitude=22.05&current_weather=true")
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=YY.YY&longitude=XX.XX&current_weather=true")
   .then(res => res.json())
   .then(data => {
     const temp = data.current_weather.temperature;
@@ -45,7 +45,7 @@ function updateWeather(){
 
 }
 
-setInterval(updateWeather, 1800000)
+setInterval(updateWeather, 1800000) //30mins
 updateWeather();
 
 
@@ -78,5 +78,6 @@ motyw.addEventListener("click", function () {
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
     }
+
 
 });
