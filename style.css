@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 25px;
+}
+
+#motyw {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.zegar {
+    display: flex;
+    gap: 40px;
+    font-family: serif;
+    text-align: center;
+}
+
+#godzina {
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+#pogoda {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.proxmox,
+.pc {
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#wlacznik_pm,
+#wlacznik_pc {
+    background-color: palegreen;
+}
+
+#reset_pm {
+    background-color: palegoldenrod;
+}
+
+.dark {
+    background: #111;
+    color: white;
+}
+
+.light {
+    background: white;
+    color: black;
+}
